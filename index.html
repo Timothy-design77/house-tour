@@ -27,7 +27,7 @@ fetch('tour.json').then(r => r.json()).then(T => {
   const scenes = {}, map = document.getElementById('map'), you = document.getElementById('you');
   const e = T.extent, left = s => (s.x - e.x0) / (e.x1 - e.x0) * 100 + '%', top = s => (e.y1 - s.y) / (e.y1 - e.y0) * 100 + '%';
   for (const [id, s] of Object.entries(T.scenes)) {
-    scenes[id] = {title: s.name, type: 'equirectangular', panorama: `img/${id}.jpg`,
+    scenes[id] = {title: s.name, type: 'equirectangular', panorama: `img/${id}.jpg`, yaw: id === T.first ? T.first_yaw : 0,
       hotSpots: s.spots.map(h => ({pitch: h.pitch, yaw: h.yaw, type: 'scene', text: h.name, sceneId: h.target, targetYaw: 'sameAzimuth'}))};
     const d = document.createElement('button');
     d.className = 'dot'; d.title = s.name; d.dataset.id = id; d.style.left = left(s); d.style.top = top(s);

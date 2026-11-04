@@ -1,5 +1,6 @@
 {
  "first": "great-room",
+ "first_yaw": -85,
  "extent": {
   "x0": -0.5,
   "y0": 3.0,
@@ -8,7 +9,7 @@
  },
  "scenes": {
   "media-room": {
-   "name": "Media Room",
+   "name": "Study",
    "x": 16.5,
    "y": 22.3,
    "spots": [
@@ -27,8 +28,15 @@
    "y": 15.4,
    "spots": [
     {
+     "target": "kitchen",
+     "name": "Kitchen",
+     "yaw": -155.2,
+     "pitch": -28.3,
+     "through_door": true
+    },
+    {
      "target": "media-room",
-     "name": "Media Room",
+     "name": "Study",
      "yaw": 9.1,
      "pitch": -12.9,
      "through_door": true
@@ -38,13 +46,6 @@
      "name": "Sun Room Doorway",
      "yaw": -57.9,
      "pitch": -28.0,
-     "through_door": true
-    },
-    {
-     "target": "kitchen",
-     "name": "Kitchen",
-     "yaw": -155.2,
-     "pitch": -28.3,
      "through_door": true
     }
    ]
