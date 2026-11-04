@@ -49,17 +49,17 @@
    "y": 22.3,
    "spots": [
     {
-     "target": "great-room",
-     "name": "Great Room",
-     "yaw": -152.1,
-     "pitch": -29.0,
-     "through_door": true
-    },
-    {
      "target": "bedroom-5",
      "name": "Bedroom 5",
      "yaw": -151.6,
      "pitch": -29.4,
+     "through_door": true
+    },
+    {
+     "target": "great-room",
+     "name": "Great Room",
+     "yaw": -152.1,
+     "pitch": -29.0,
      "through_door": true
     }
    ]
@@ -70,17 +70,17 @@
    "y": 15.4,
    "spots": [
     {
-     "target": "media-room",
-     "name": "Study",
-     "yaw": 9.1,
-     "pitch": -12.9,
-     "through_door": true
-    },
-    {
      "target": "sun-room-door",
      "name": "Sun Room Doorway",
      "yaw": -57.9,
      "pitch": -28.0,
+     "through_door": true
+    },
+    {
+     "target": "media-room",
+     "name": "Study",
+     "yaw": 9.1,
+     "pitch": -12.9,
      "through_door": true
     },
     {
