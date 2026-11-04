@@ -15,8 +15,8 @@
     {
      "target": "sun-room-door",
      "name": "Sun Room Doorway",
-     "yaw": -15.1,
-     "pitch": -19.9,
+     "yaw": -48.9,
+     "pitch": -28.2,
      "through_door": true
     }
    ]
@@ -29,8 +29,8 @@
     {
      "target": "kitchen",
      "name": "Kitchen",
-     "yaw": 141.3,
-     "pitch": -22.2,
+     "yaw": 146.2,
+     "pitch": -23.5,
      "through_door": true
     }
    ]
