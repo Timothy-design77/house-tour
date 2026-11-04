@@ -1,5 +1,5 @@
 {
- "first": "kitchen",
+ "first": "great-room",
  "extent": {
   "x0": -0.5,
   "y0": 3.0,
@@ -7,16 +7,37 @@
   "y1": 31.0
  },
  "scenes": {
+  "great-room": {
+   "name": "Great Room",
+   "x": 14.6,
+   "y": 15.4,
+   "spots": [
+    {
+     "target": "kitchen",
+     "name": "Kitchen",
+     "yaw": -155.2,
+     "pitch": -28.3,
+     "through_door": true
+    },
+    {
+     "target": "sun-room-door",
+     "name": "Sun Room Doorway",
+     "yaw": -57.9,
+     "pitch": -28.0,
+     "through_door": true
+    }
+   ]
+  },
   "kitchen": {
    "name": "Kitchen",
    "x": 13.0,
    "y": 11.69,
    "spots": [
     {
-     "target": "sun-room-door",
-     "name": "Sun Room Doorway",
-     "yaw": -48.9,
-     "pitch": -28.2,
+     "target": "great-room",
+     "name": "Great Room",
+     "yaw": 20.7,
+     "pitch": -22.0,
      "through_door": true
     }
    ]
@@ -27,10 +48,10 @@
    "y": 15.91,
    "spots": [
     {
-     "target": "kitchen",
-     "name": "Kitchen",
-     "yaw": 146.2,
-     "pitch": -23.5,
+     "target": "great-room",
+     "name": "Great Room",
+     "yaw": 48.9,
+     "pitch": -44.0,
      "through_door": true
     }
    ]
