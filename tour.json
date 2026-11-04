@@ -1,0 +1,17 @@
+{
+ "first": "kitchen",
+ "extent": {
+  "x0": -0.5,
+  "y0": 3.0,
+  "x1": 27.5,
+  "y1": 31.0
+ },
+ "scenes": {
+  "kitchen": {
+   "name": "Kitchen",
+   "x": 13.0,
+   "y": 11.69,
+   "spots": []
+  }
+ }
+}
