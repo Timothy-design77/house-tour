@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>House Tour</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="pannellum.css">
+<style>
+html,body{margin:0;height:100%;background:#111;overflow:hidden;font:15px system-ui,sans-serif}
+#pano{position:fixed;inset:0}
+#map{position:fixed;right:10px;bottom:10px;width:min(38vw,210px);aspect-ratio:1;background:rgba(20,20,22,.55);border-radius:10px;z-index:5}
+#map img{width:100%;height:100%;display:block}
+.dot{position:absolute;width:16px;height:16px;margin:-8px;padding:0;border:0;background:none;cursor:pointer}
+.dot::after{content:"";position:absolute;inset:4px;border-radius:50%;background:#2d7ff9;box-shadow:0 0 0 1.5px #fff}
+.dot.here::after{background:#ff5a36}
+#you{position:absolute;width:0;height:0;pointer-events:none}
+#you::before{content:"";position:absolute;left:-13px;top:-26px;border:13px solid transparent;border-bottom:26px solid rgba(255,90,54,.5);border-top:0}
+#room{position:fixed;left:10px;top:10px;z-index:5;color:#fff;background:rgba(20,20,22,.6);padding:6px 11px;border-radius:8px}
+</style>
+</head>
+<body>
+<div id="pano"></div>
+<div id="room"></div>
+<div id="map"><img src="plan.png" alt="Floor plan"><div id="you"></div></div>
+<script src="pannellum.js"></script>
+<script>
+fetch('tour.json').then(r => r.json()).then(T => {
+  const scenes = {}, map = document.getElementById('map'), you = document.getElementById('you'), room = document.getElementById('room');
+  const e = T.extent, left = s => (s.x - e.x0) / (e.x1 - e.x0) * 100 + '%', top = s => (e.y1 - s.y) / (e.y1 - e.y0) * 100 + '%';
+  for (const [id, s] of Object.entries(T.scenes)) {
+    scenes[id] = {title: s.name, type: 'equirectangular', panorama: `img/${id}.jpg`,
+      hotSpots: s.spots.map(h => ({pitch: h.pitch, yaw: h.yaw, type: 'scene', text: h.name, sceneId: h.target, targetYaw: 'sameAzimuth'}))};
+    const d = document.createElement('button');
+    d.className = 'dot'; d.title = s.name; d.dataset.id = id; d.style.left = left(s); d.style.top = top(s);
+    d.onclick = () => v.loadScene(id, 'same', 'sameAzimuth');
+    map.append(d);
+  }
+  const v = window.tourViewer = pannellum.viewer('pano', {default: {firstScene: T.first, autoLoad: true, sceneFadeDuration: 500, hfov: 100, showFullscreenCtrl: true}, scenes});
+  const show = id => {
+    const s = T.scenes[id];
+    room.textContent = s.name; you.style.left = left(s); you.style.top = top(s);
+    map.querySelectorAll('.dot').forEach(d => d.classList.toggle('here', d.dataset.id === id));
+  };
+  v.on('scenechange', show); show(T.first);
+  (function spin() { you.style.transform = `rotate(${v.getYaw()}deg)`; requestAnimationFrame(spin); })();
+});
+</script>
+</body>
+</html>
