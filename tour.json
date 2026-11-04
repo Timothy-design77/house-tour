@@ -13,17 +13,17 @@
    "y": 15.4,
    "spots": [
     {
-     "target": "kitchen",
-     "name": "Kitchen",
-     "yaw": -155.2,
-     "pitch": -28.3,
-     "through_door": true
-    },
-    {
      "target": "sun-room-door",
      "name": "Sun Room Doorway",
      "yaw": -57.9,
      "pitch": -28.0,
+     "through_door": true
+    },
+    {
+     "target": "kitchen",
+     "name": "Kitchen",
+     "yaw": -155.2,
+     "pitch": -28.3,
      "through_door": true
     }
    ]
