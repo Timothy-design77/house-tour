@@ -11,7 +11,29 @@
    "name": "Kitchen",
    "x": 13.0,
    "y": 11.69,
-   "spots": []
+   "spots": [
+    {
+     "target": "sun-room-door",
+     "name": "Sun Room Doorway",
+     "yaw": -15.1,
+     "pitch": -19.9,
+     "through_door": true
+    }
+   ]
+  },
+  "sun-room-door": {
+   "name": "Sun Room Doorway",
+   "x": 7.9,
+   "y": 15.91,
+   "spots": [
+    {
+     "target": "kitchen",
+     "name": "Kitchen",
+     "yaw": 141.3,
+     "pitch": -22.2,
+     "through_door": true
+    }
+   ]
   }
  }
 }
