@@ -28,18 +28,18 @@
    "y": 11.0,
    "spots": [
     {
-     "target": "sun-room-door",
-     "name": "Sun Room Doorway",
-     "yaw": 5.8,
-     "pitch": -17.8,
-     "through_door": false
-    },
-    {
      "target": "kitchen",
      "name": "Kitchen",
      "yaw": 114.3,
      "pitch": -43.3,
      "through_door": true
+    },
+    {
+     "target": "sun-room-door",
+     "name": "Sun Room Doorway",
+     "yaw": 5.8,
+     "pitch": -17.8,
+     "through_door": false
     },
     {
      "target": "bedroom-3",
@@ -98,17 +98,17 @@
    "y": 18.0,
    "spots": [
     {
-     "target": "great-room",
-     "name": "Great Room",
-     "yaw": -54.1,
-     "pitch": -41.8,
-     "through_door": true
-    },
-    {
      "target": "hall",
      "name": "Main Hall",
      "yaw": -55.1,
      "pitch": -31.4,
+     "through_door": true
+    },
+    {
+     "target": "great-room",
+     "name": "Great Room",
+     "yaw": -54.1,
+     "pitch": -41.8,
      "through_door": true
     },
     {
@@ -203,18 +203,18 @@
    "y": 8.0,
    "spots": [
     {
-     "target": "dining",
-     "name": "Dining",
-     "yaw": -80.7,
-     "pitch": -32.8,
-     "through_door": true
-    },
-    {
      "target": "bedroom-4",
      "name": "Bedroom 4",
      "yaw": -95.2,
      "pitch": -13.6,
      "through_door": false
+    },
+    {
+     "target": "dining",
+     "name": "Dining",
+     "yaw": -80.7,
+     "pitch": -32.8,
+     "through_door": true
     }
    ]
   },
@@ -238,17 +238,17 @@
    "y": 20.4,
    "spots": [
     {
-     "target": "den",
-     "name": "Den",
-     "yaw": -93.5,
-     "pitch": -21.5,
-     "through_door": true
-    },
-    {
      "target": "bedroom-6",
      "name": "Bedroom 6",
      "yaw": -83.7,
      "pitch": -21.4,
+     "through_door": true
+    },
+    {
+     "target": "den",
+     "name": "Den",
+     "yaw": -93.5,
+     "pitch": -21.5,
      "through_door": true
     }
    ]
@@ -315,17 +315,17 @@
    "y": 11.69,
    "spots": [
     {
-     "target": "great-room",
-     "name": "Great Room",
-     "yaw": 20.7,
-     "pitch": -22.0,
-     "through_door": true
-    },
-    {
      "target": "dining",
      "name": "Dining",
      "yaw": -153.3,
      "pitch": -45.8,
+     "through_door": true
+    },
+    {
+     "target": "great-room",
+     "name": "Great Room",
+     "yaw": 20.7,
+     "pitch": -22.0,
      "through_door": true
     }
    ]
