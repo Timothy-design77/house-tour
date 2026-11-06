@@ -77,18 +77,18 @@
    "y": 15.11,
    "spots": [
     {
-     "target": "great-room",
-     "name": "Great Room",
-     "yaw": -83.8,
-     "pitch": -31.0,
-     "through_door": false
-    },
-    {
      "target": "office",
      "name": "Office",
      "yaw": 170.9,
      "pitch": -29.3,
      "through_door": true
+    },
+    {
+     "target": "great-room",
+     "name": "Great Room",
+     "yaw": -83.8,
+     "pitch": -31.0,
+     "through_door": false
     }
    ]
   },
@@ -105,6 +105,13 @@
      "through_door": true
     },
     {
+     "target": "bedroom-5",
+     "name": "Bedroom 5",
+     "yaw": -36.4,
+     "pitch": -53.6,
+     "through_door": true
+    },
+    {
      "target": "great-room",
      "name": "Great Room",
      "yaw": -54.1,
@@ -116,13 +123,6 @@
      "name": "Main Hall",
      "yaw": -55.1,
      "pitch": -31.4,
-     "through_door": true
-    },
-    {
-     "target": "bedroom-5",
-     "name": "Bedroom 5",
-     "yaw": -36.4,
-     "pitch": -53.6,
      "through_door": true
     }
    ]
@@ -168,17 +168,17 @@
    "y": 12.29,
    "spots": [
     {
-     "target": "bedroom-2",
-     "name": "Bedroom 2",
-     "yaw": -144.3,
-     "pitch": -46.3,
-     "through_door": true
-    },
-    {
      "target": "entry",
      "name": "Entry",
      "yaw": -53.4,
      "pitch": -55.3,
+     "through_door": true
+    },
+    {
+     "target": "bedroom-2",
+     "name": "Bedroom 2",
+     "yaw": -144.3,
+     "pitch": -46.3,
      "through_door": true
     }
    ]
@@ -203,18 +203,18 @@
    "y": 8.0,
    "spots": [
     {
-     "target": "bedroom-4",
-     "name": "Bedroom 4",
-     "yaw": -95.4,
-     "pitch": -14.2,
-     "through_door": false
-    },
-    {
      "target": "dining",
      "name": "Dining",
      "yaw": -78.2,
      "pitch": -36.1,
      "through_door": true
+    },
+    {
+     "target": "bedroom-4",
+     "name": "Bedroom 4",
+     "yaw": -95.4,
+     "pitch": -14.2,
+     "through_door": false
     }
    ]
   },
@@ -287,6 +287,13 @@
    "y": 15.4,
    "spots": [
     {
+     "target": "den",
+     "name": "Den",
+     "yaw": 8.6,
+     "pitch": -23.4,
+     "through_door": true
+    },
+    {
      "target": "kitchen",
      "name": "Kitchen",
      "yaw": -155.2,
@@ -299,13 +306,6 @@
      "yaw": 95.4,
      "pitch": -31.0,
      "through_door": false
-    },
-    {
-     "target": "den",
-     "name": "Den",
-     "yaw": 8.6,
-     "pitch": -23.4,
-     "through_door": true
     }
    ]
   },
@@ -315,17 +315,17 @@
    "y": 11.69,
    "spots": [
     {
-     "target": "great-room",
-     "name": "Great Room",
-     "yaw": 20.7,
-     "pitch": -22.0,
-     "through_door": true
-    },
-    {
      "target": "dining",
      "name": "Dining",
      "yaw": -153.3,
      "pitch": -45.8,
+     "through_door": true
+    },
+    {
+     "target": "great-room",
+     "name": "Great Room",
+     "yaw": 20.7,
+     "pitch": -22.0,
      "through_door": true
     }
    ]
